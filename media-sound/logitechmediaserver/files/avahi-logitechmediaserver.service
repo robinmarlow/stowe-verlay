@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+<name replace-wildcards="yes">Squeezcenter on %h</name>
+<service>
+<type>_http._tcp</type>
+<port>9000</port>
+<txt-record>path=/</txt-record>
+</service>
+<service>
+<type>_slimhttp._tcp</type>
+<port>9000</port>
+</service>
+<service>
+<type>_slimcli._tcp</type>
+<port>9090</port>
+</service>
+</service-group>
